@@ -1,7 +1,7 @@
 .section {
   display: flex;
   align-items: center;
-  height: 30vh;
+  height: 50vh;
   padding: 10%;
 }
 
@@ -16,6 +16,7 @@
 
 .content h2 {
   font-size: 5em;
+  font-weight: 800;
 }
 
 .content p {

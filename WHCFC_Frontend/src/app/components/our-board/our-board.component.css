@@ -1,7 +1,7 @@
 .section {
   display: flex;
   align-items: center;
-  height: 30vh;
+  height: 50vh;
   padding: 10%;
   }
 
@@ -15,10 +15,11 @@
 
   h2 {
     font-size: 5em;
+    font-weight: 800;
   }
   
   p {
-    font-size: 1.5em;
+    font-size: 3em;
   }
 
   .image {
@@ -36,11 +37,13 @@
   .board-members {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 10%;
   }
-
+  
   .board-member {
-    flex: 1 1 45%;
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px); 
     text-align: center;
     margin: 20px;
   }
