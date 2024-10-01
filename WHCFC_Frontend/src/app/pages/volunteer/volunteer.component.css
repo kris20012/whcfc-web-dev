@@ -5,6 +5,8 @@
 .volunteer-container {
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     overflow: auto;
     min-height: 100vh;
     align-items: center;
