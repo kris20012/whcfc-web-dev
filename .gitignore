@@ -1,12 +1,10 @@
 node_modules/
-dist/
 .angular/
 .vscode/
 .env*
 .DS_Store
 
 node_modules/
-dist/
 build/
 .angular/
 coverage/
