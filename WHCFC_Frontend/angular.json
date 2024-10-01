@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "WHCFC_Frontend/dist/whcfc-frontend",
+            "outputPath": "dist/whcfc-frontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
