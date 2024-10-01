@@ -1,0 +1,23 @@
+:host { 
+  display: contents; 
+}
+
+.volunteer-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .volunteer-volunteer {
+    width: 100%;
+    height: 5840px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 1);
+  }

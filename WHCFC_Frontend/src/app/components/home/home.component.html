@@ -1,0 +1,68 @@
+<section class="hero">
+    <div class="blurred-background"></div>
+    <div class="hero-content">
+      <h1>Play Soccer for Free with WHCFC!</h1>
+      <p class="sub-text">Yes, you heard it right! It's free.</p>
+      <p class="description">
+        Join us for free soccer sessions, team tournaments, and workshops to enhance your skills and career. Network with like-minded individuals and be part of our supportive community.
+      </p>
+    </div>
+  </section>  
+  
+  <div class="benefits-section">
+    <h2>Why Join WHCFC?</h2>
+    <div class="benefits">
+      <div class="benefit-card" *ngFor="let benefit of benefits">
+        <div class="benefit-icon">{{ benefit.icon }}</div>
+        <div class="benefit-text">
+          <h3>{{ benefit.title }}</h3>
+          <p>{{ benefit.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vision-mission-section">
+    <div class="vision-container">
+      <div class="vision-text">
+        <h2>Our Vision</h2>
+        <p>
+          WHCFC aims to be Scarborough’s first club offering free soccer opportunities, promoting community, diversity, and inclusivity. We strive to foster a welcoming environment for equity-deserving groups and celebrate cultural differences. Our goal is to enhance community spirit through football while providing free educational workshops on essential life skills like project management and mental health.
+        </p>
+      </div>
+      <div class="vision-image">
+        <img src="/assets/vision_home.jpg" alt="Community and Football" />
+      </div>
+    </div>
+  
+    <div class="mission-container">
+      <div class="mission-image">
+        <img src="/assets/mission_home.jpg" alt="Inclusivity and Diversity" />
+      </div>
+      <div class="mission-text">
+        <h2>Our Mission</h2>
+        <p>
+          While some costs may apply for team play and tournaments, we are committed to minimizing these expenses. WHCFC seeks to support marginalized communities by securing funding from government and businesses, ensuring accessibility and minimal costs for participation.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="video-section">
+    <div class="video-content">
+      <div class="video-text">
+        <h2>Message from Joe</h2>
+        <p>
+          Discover Joe’s personal journey with WHCFC. In this heartfelt message, Joe shares how he first joined the club, the passion that drives him, and his vision for making a difference in the community. Learn about the values and experiences that make WHCFC unique and hear firsthand why Joe believes in our mission.
+        </p>
+      </div>
+      <div class="video-player">
+        <video controls>
+          <source src="path-to-joe-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+  
+  

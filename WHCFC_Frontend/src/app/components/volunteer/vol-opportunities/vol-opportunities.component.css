@@ -1,0 +1,285 @@
+.volunteer-discover-volunteering-opps {
+  top: 1000px;  
+  width: 100vw;
+  height: 133px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+
+  .volunteer-text1 {
+    top: 1050px;
+    color: rgba(0, 0, 0, 1);
+    width: 1065px;
+    height: auto;
+    position: absolute;
+    text-align: center;
+    line-height: normal;
+    font-weight: 700;
+  }
+
+  .volunteer-text2 {
+    top: 1150px;
+    color: rgba(0, 0, 0, 1);
+    width: 700px;
+    height: auto;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    line-height: normal;
+  }
+
+  .volunteer-connect1 {
+    top: 1307px;
+    left: 300px;
+    width: 1065px;
+    height: 295px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .volunteer-connect2 {
+    top: 20px;
+    left: 630px;
+    width: 435px;
+    height: 275px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+
+  .volunteer-text3 {
+    color: rgba(67, 102, 230, 1);
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: normal;
+    font-weight: 700;
+  }
+  
+  .volunteer-text4 {
+    top: 38px;
+    color: rgba(0, 0, 0, 1);
+    width: 435px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: normal;
+    font-weight: 700;
+  }
+  
+  .volunteer-text5 {
+    top: 147px;
+    color: rgba(0, 0, 0, 1);
+    width: 435px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: normal;
+  }
+
+  .volunteer-Shaun {
+    top: 0px;
+    left: 0px;
+    width: 525px;
+    height: 295px;
+    position: absolute;
+    border-radius: 30px;
+  }
+
+  .volunteer-gain-experience {
+    top: 1715px;
+    left: 300px;
+    width: 1065px;
+    height: 326px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .volunteer-connect3 {
+    top: 28px;
+    left: 0px;
+    width: 435px;
+    height: 275px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+
+  .volunteer-text6 {
+    color: rgba(67, 102, 230, 1);
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: normal;
+    font-weight: 700;
+  }
+
+  .volunteer-text7 {
+    top: 38px;
+    color: rgba(0, 0, 0, 1);
+    width: 435px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: normal;
+    font-weight: 700;
+  }
+
+  .volunteer-text8 {
+    top: 147px;
+    color: rgba(0, 0, 0, 1);
+    width: 435px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: normal;
+  }
+  
+  .volunteer-image2 {
+    top: 0px;
+    left: 540px;
+    width: 525px;
+    height: 326px;
+    position: absolute;
+    border-radius: 30px;
+  }
+
+  .volunteer-support {
+    top: 2121px;
+    left: 300px;
+    width: 1065px;
+    height: 314px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .volunteer-connect4 {
+    top: 30px;
+    left: 630px;
+    width: 435px;
+    height: 275px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+
+  .volunteer-text9 {
+    color: rgba(67, 102, 230, 1);
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: normal;
+    font-weight: 700;
+  }
+
+  .volunteer-text10 {
+    top: 38px;
+    color: rgba(0, 0, 0, 1);
+    width: 435px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: normal;
+    font-weight: 700;
+  }
+
+  .volunteer-text11 {
+    top: 147px;
+    color: rgba(0, 0, 0, 1);
+    width: 435px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: normal;
+  }
+
+  .volunteer-image3 {
+    top: 0px;
+    left: 0px;
+    width: 525px;
+    height: 314px;
+    position: absolute;
+    border-radius: 30px;
+  }
+
+  .volunteer-middle-button {
+    top: 2536px;
+    left: 300px;
+    width: 1066px;
+    height: 429px;
+    display: flex;
+    position: absolute;
+    background: linear-gradient(158deg, rgba(146, 226, 93, 1) 0%, rgba(95, 146, 182, 1) 65%, rgba(67, 102, 230, 1) 100%);
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-radius: 30px;
+  }
+
+  .volunteer-text12 {
+    top: 60px;
+    left: 399px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 24px;
+    font-style: SemiBold;
+    text-align: center;
+    font-family: Outfit;
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+
+  .volunteer-text13 {
+    top: 122px;
+    left: 206px;
+    color: rgba(255, 255, 255, 1);
+    width: 648px;
+    height: auto;
+    position: absolute;
+    font-size: 48px;
+    font-style: Bold;
+    text-align: center;
+    font-family: Outfit;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+
+  .volunteer-button1 {
+    gap: 10px;
+    top: 289px;
+    left: 405px;
+    display: flex;
+    padding: 29px 30px;
+    position: absolute;
+    align-items: center;
+    border-radius: 100px;
+    justify-content: center;
+    background-color: rgba(224, 212, 118, 1);
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .volunteer-button1:hover {
+    background-color: rgba(0, 225, 255, 0.871); 
+  }
+  
+  .volunteer-text14 {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    text-align: left;
+    line-height: normal;
+    font-weight: 700;
+  }

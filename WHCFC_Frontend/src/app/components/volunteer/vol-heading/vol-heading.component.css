@@ -1,0 +1,85 @@
+.volunteer-volunteer-header-black {
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background-color: rgba(0, 0, 0, 1);
+  }
+
+  .volunteer-volunteer-header {
+    top: 123px;
+    left: 188px;
+    width: 1065px;
+    height: 477px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+
+  .volunteer-text1 {
+    color: rgba(255, 255, 255, 1);
+    width: 524px;
+    height: auto;
+    position: absolute;
+    font-size: 96px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Outfit;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+
+  .volunteer-text2 {
+    top: 307px;
+    color: rgba(255, 255, 255, 1);
+    width: 499px;
+    height: auto;
+    position: absolute; 
+    text-align: left;
+    line-height: normal;
+  }
+
+  .volunteer-image1 {
+    top: 70px;
+    left: 700px;
+    width: 600px;
+    height: 370px;
+    position: absolute;
+    border-radius: 30px;
+  }
+
+  .volunteer-button1 {
+    gap: 10px;
+    top: 500px;
+    left: 100px;
+    display: flex;
+    padding: 29px 30px;
+    position: absolute;
+    align-items: center;
+    border-radius: 100px;
+    justify-content: center;
+    background-color: rgba(224, 212, 118, 1);
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .volunteer-button1:hover {
+    background-color: rgba(0, 225, 255, 0.871); 
+  }
+
+  .volunteer-text3 {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    text-align: left;
+    line-height: normal;
+    font-weight: 700;
+  }
+
+ 
