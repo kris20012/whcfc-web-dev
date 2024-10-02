@@ -1,12 +1,14 @@
 .volunteer-get-involved {
-    top: 4020px;
+    top: 2020px;
     left: 300px;
     width: 1068px;
     height: 627px;
     display: flex;
-    position: absolute;
+    position: relative;
     align-items: flex-start;
     flex-shrink: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
   .volunteer-text1 {
     left: 234px;

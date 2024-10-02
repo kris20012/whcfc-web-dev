@@ -18,7 +18,7 @@
     height: 5840px;
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     align-items: flex-start;
     flex-direction: column;
