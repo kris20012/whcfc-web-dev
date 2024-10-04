@@ -14,7 +14,7 @@
   top: 123px;
   left: 188px;
   width: 1065px;
-  height: 477px;
+  height: auto;
   display: flex;
   position: absolute;
   align-items: flex-start;
@@ -61,13 +61,14 @@
   left: 100px;
   display: flex;
   padding: 29px 30px;
-  position: absolute;
+  position: relative;
   align-items: center;
   border-radius: 100px;
   justify-content: center;
   background-color: rgba(224, 212, 118, 1);
   border: none;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .volunteer-button1:hover {
