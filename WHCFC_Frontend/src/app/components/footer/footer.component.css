@@ -10,6 +10,7 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; 
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -19,11 +20,6 @@ footer {
 .footer-logo {
     margin-right: 10px; 
 }
-
-.footer-logo a {
-    display: inline-block;
-    cursor: pointer;
-  }
 
 .footer-logo img {
     width: 100px; 
@@ -35,17 +31,11 @@ footer {
     align-items: flex-start; 
 }
 
-.footer-info {
+.footer-info, .footer-hours {
     margin-right: 30px; 
 }
 
-.footer-info p {
-    margin: 0;
-    line-height: 1.5;
-    font-size: 16px;
-}
-
-.footer-hours p {
+.footer-info p, .footer-hours p {
     margin: 0;
     line-height: 1.5;
     font-size: 16px;
@@ -55,11 +45,6 @@ footer {
     margin: 0;
     line-height: 1.5;
     font-size: 16px;
-}
-
-.footer-newsletter p {
-    font-weight: bold;
-    margin-bottom: 10px;
 }
 
 .social-icons a {
@@ -110,4 +95,83 @@ footer {
 
 .footer-stay-connected button:hover {
     background-color: darkred;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-info-hours {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-info, .footer-hours {
+        margin-right: 0; 
+        margin-bottom: 20px;
+    }
+
+    .footer-logo img {
+        width: 80px; 
+    }
+
+    .footer-social {
+        text-align: center;
+    }
+
+    .footer-social p {
+        font-size: 14px;
+    }
+
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-stay-connected input[type="email"] {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+
+    .footer-stay-connected button {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 10px;
+    }
+
+    .footer-info-hours {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-info p, .footer-hours p {
+        font-size: 14px;
+    }
+
+    .footer-logo img {
+        width: 60px; 
+    }
+
+    .social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer-stay-connected button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .footer-stay-connected input[type="email"] {
+        font-size: 14px;
+        padding: 8px;
+    }
 }
