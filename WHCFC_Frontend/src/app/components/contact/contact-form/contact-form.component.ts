@@ -5,16 +5,16 @@ import {
   Validators,
   ReactiveFormsModule,
 } from '@angular/forms';
-import { EmailService } from '../../services/email.service';
+import { EmailService } from '../../../services/email.service';
 
 @Component({
-  selector: 'app-contact',
+  selector: 'contact-contact-form',
   standalone: true,
   imports: [ReactiveFormsModule],
-  templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css',
+  templateUrl: './contact-form.component.html',
+  styleUrl: './contact-form.component.css',
 })
-export class ContactComponent {
+export class ContactFormComponent {
   contactForm: FormGroup;
   constructor(private emailService: EmailService, private fb: FormBuilder) {
     this.contactForm = this.fb.group({
