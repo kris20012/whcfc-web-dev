@@ -1,15 +1,16 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectorRef } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
+  styleUrls: ['./home.component.css'], // Fixing styleUrl to styleUrls
 })
-export class HomeComponent {
-
+export class HomeComponent implements OnInit, OnDestroy {
+  
   benefits = [
     {
       icon: '⚽', 
@@ -32,4 +33,44 @@ export class HomeComponent {
       description: 'Join free workshops focused on developing life skills, career growth, and personal development. Enhance your skills and knowledge to support your future endeavors.'
     }
   ];
+
+  activeSlide = 0; // Track the current slide
+  slideInterval: ReturnType<typeof setInterval> | undefined; // Hold the interval reference
+
+  constructor(private cdr: ChangeDetectorRef) {} // Inject ChangeDetectorRef
+
+  ngOnInit() {
+    // Check if we are in a browser context
+    if (typeof window !== 'undefined') {
+      // Automatically switch slides every 5 seconds
+      this.slideInterval = setInterval(() => {
+        this.nextSlide();
+      }, 5000); // 5000 milliseconds = 5 seconds
+    }
+  }
+
+  ngOnDestroy() {
+    // Clear interval when component is destroyed to avoid memory leaks
+    if (this.slideInterval) {
+      clearInterval(this.slideInterval);
+    }
+  }
+
+  // Manually go to a specific slide
+  goToSlide(slideIndex: number) {
+    this.activeSlide = slideIndex;
+    this.cdr.detectChanges(); // Manually trigger change detection to update UI
+  }
+
+  // Automatically move to the next slide
+  nextSlide() {
+    this.activeSlide = (this.activeSlide + 1) % 2; // Alternates between 0 and 1 for two slides
+    this.cdr.detectChanges(); // Manually trigger change detection to update UI
+  }
+
+  // Move to the previous slide
+  prevSlide() {
+    this.activeSlide = (this.activeSlide - 1 + 2) % 2; // Cycles back to the last slide if at the beginning
+    this.cdr.detectChanges(); // Manually trigger change detection to update UI
+  }
 }
