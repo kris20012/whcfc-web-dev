@@ -1,0 +1,60 @@
+.section {
+  display: flex;
+  align-items: center;
+  height: 50vh;
+  padding: 10%;
+  }
+
+  .grey-background {
+    background-color: #f0f0f0;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  h2 {
+    font-size: 5em;
+    font-weight: 800;
+  }
+  
+  p {
+    font-size: 3em;
+  }
+
+  .image {
+    flex: 1;
+  }
+
+  .left {
+    order: 1;
+  }
+
+  .right {
+    order: 2;
+  }
+
+  .board-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10%;
+  }
+  
+  .board-member {
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px); 
+    text-align: center;
+    margin: 20px;
+  }
+
+  .board-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .board-member p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
