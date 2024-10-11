@@ -40,23 +40,19 @@ export class HomeComponent implements OnInit, OnDestroy {
   constructor(private cdr: ChangeDetectorRef) {} // Inject ChangeDetectorRef
 
   ngOnInit() {
-    // Check if we are in a browser context
     if (typeof window !== 'undefined') {
-      // Automatically switch slides every 5 seconds
       this.slideInterval = setInterval(() => {
         this.nextSlide();
-      }, 5000); // 5000 milliseconds = 5 seconds
+      }, 10000); 
     }
   }
 
   ngOnDestroy() {
-    // Clear interval when component is destroyed to avoid memory leaks
     if (this.slideInterval) {
       clearInterval(this.slideInterval);
     }
   }
 
-  // Manually go to a specific slide
   goToSlide(slideIndex: number) {
     this.activeSlide = slideIndex;
     this.cdr.detectChanges(); // Manually trigger change detection to update UI
