@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       // Automatically switch slides every 5 seconds
       this.slideInterval = setInterval(() => {
         this.nextSlide();
-      }, 5000); // 5000 milliseconds = 5 seconds
+      }, 10000); // 5000 milliseconds = 5 seconds
     }
   }
 

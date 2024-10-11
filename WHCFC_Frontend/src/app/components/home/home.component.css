@@ -243,3 +243,7 @@ video {
   color: white; /* Set the email link color to white */
   text-decoration: underline; /* Optional: Add underline for clarity */
 }
+
+h2 {
+  color: white;
+}
