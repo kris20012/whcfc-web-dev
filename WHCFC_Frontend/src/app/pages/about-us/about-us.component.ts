@@ -5,6 +5,7 @@ import { VisionComponent } from '../../components/vision/vision.component';
 import { GoalComponent } from '../../components/goal/goal.component';
 import { OurBoardComponent } from '../../components/our-board/our-board.component';
 import { WhereWePlayComponent } from '../../components/where-we-play/where-we-play.component';
+import { TestimonialComponent } from '../../components/testimonial/testimonial.component';
 
 @Component({
   selector: 'app-about-us',
@@ -17,7 +18,8 @@ import { WhereWePlayComponent } from '../../components/where-we-play/where-we-pl
     VisionComponent,
     GoalComponent,
     OurBoardComponent,
-    WhereWePlayComponent
+    WhereWePlayComponent,
+    TestimonialComponent
   ]
 })
 export class AboutUsComponent {}
