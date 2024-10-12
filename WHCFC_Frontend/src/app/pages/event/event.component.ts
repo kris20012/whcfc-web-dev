@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { CalendarComponent } from '../../components/event/calendar/calendar.component';
 
 @Component({
   selector: 'app-event',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, CalendarComponent],
   templateUrl: './event.component.html',
-  styleUrl: './event.component.css'
+  styleUrls: ['./event.component.css'],
 })
-export class EventComponent {
-
-}
+export class EventComponent {}
