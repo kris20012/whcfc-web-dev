@@ -80,7 +80,11 @@ export class CalendarComponent {
     for (let i = 0; i < this.eventList.length; i++) {
       const event = this.eventList[i];
       const eventDate = new TZDate(
-        parse(event.date + event.time, 'yyyy-MM-ddHH:mm:ss', new Date()),
+        parse(
+          event.date.split('T')[0] + event.time,
+          'yyyy-MM-ddHH:mm:ss',
+          new Date()
+        ),
         'America/New_York'
       );
       const eventDay = eventDate.getDate();

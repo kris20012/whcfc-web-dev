@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { CalendarComponent } from '../../components/event/calendar/calendar.component';
 import { EventDetailComponent } from '../../components/event/event-detail/event-detail.component';
 import { Events } from '../../../types';
+import { RestService } from '../../services/rest.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-event',
@@ -12,41 +14,13 @@ import { Events } from '../../../types';
   styleUrls: ['./event.component.css'],
 })
 export class EventComponent {
-  eventList: Events[];
+  eventList: Events[] = [];
 
-  constructor() {
-    // For testing purposes
-    this.eventList = [
-      {
-        title: 'Test data A',
-        date: '2024-10-07',
-        time: '17:00:00',
-        category: 'match',
-        description: '',
-        location: '',
-        team1: '',
-        team2: '',
-      },
-      {
-        title: 'Test data B',
-        date: '2024-10-11',
-        time: '17:00:00',
-        category: 'match',
-        description: '',
-        location: '',
-        team1: '',
-        team2: '',
-      },
-      {
-        title: 'Test data C',
-        date: '2024-10-19',
-        time: '17:00:00',
-        category: 'match',
-        description: '',
-        location: '',
-        team1: '',
-        team2: '',
-      },
-    ];
+  constructor(private restService: RestService) {
+    const apiUrl = environment.apiUrl + '/agenda/all-agendas';
+    this.restService.get(apiUrl).subscribe((data) => {
+      this.eventList = data as Events[];
+    });
+    console.log(this.eventList);
   }
 }
