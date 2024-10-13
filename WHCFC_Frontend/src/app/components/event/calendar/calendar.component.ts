@@ -1,8 +1,23 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { parse } from 'date-fns';
 import { TZDate } from '@date-fns/tz';
 import { Events } from '../../../../types';
+
+const months = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+];
 
 @Component({
   selector: 'event-calendar',
@@ -14,18 +29,19 @@ import { Events } from '../../../../types';
 export class CalendarComponent {
   daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
   currentMonth: number;
+  currentMonthString: string;
   currentYear: number;
   daysInMonth: number;
   firstDayOfMonth: number;
   calendarDays: (number | null)[];
   todayDate: number;
-  eventList: Events[];
   eventDateList: (number | null)[];
 
   constructor() {
     const today = new Date();
     this.todayDate = today.getDate();
     this.currentMonth = today.getMonth();
+    this.currentMonthString = months[this.currentMonth];
     this.currentYear = today.getFullYear();
     this.daysInMonth = new Date(
       this.currentYear,
@@ -39,41 +55,9 @@ export class CalendarComponent {
     ).getDay();
     this.calendarDays = [];
     this.eventDateList = [];
-
-    // For testing purposes
-    this.eventList = [
-      {
-        title: 'A match',
-        date: '2024-10-16',
-        time: '17:00:00',
-        category: 'match',
-        description: '',
-        location: '',
-        team1: '',
-        team2: '',
-      },
-      {
-        title: 'B match',
-        date: '2024-10-11',
-        time: '17:00:00',
-        category: 'match',
-        description: '',
-        location: '',
-        team1: '',
-        team2: '',
-      },
-      {
-        title: 'C match',
-        date: '2024-10-19',
-        time: '17:00:00',
-        category: 'match',
-        description: '',
-        location: '',
-        team1: '',
-        team2: '',
-      },
-    ];
   }
+
+  @Input() eventList!: Events[];
 
   ngOnInit(): void {
     this.generateCalendar();

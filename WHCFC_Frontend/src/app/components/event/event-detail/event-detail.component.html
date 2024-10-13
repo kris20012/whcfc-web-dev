@@ -1,0 +1,12 @@
+<div class="w-fit max-w-4xl mx-auto md:mt-6">
+  <div *ngFor="let event of eventList" class="p-4 flex items-center">
+    <div class="flex items-center">
+      <div
+        class="border w-fit p-2 rounded bg-red-700 text-white min-w-9 text-center border-none"
+      >
+        <p class="font-bold">{{ event.date | date : "d" }}</p>
+      </div>
+      <p class="ml-5">{{ event.title }}</p>
+    </div>
+  </div>
+</div>
