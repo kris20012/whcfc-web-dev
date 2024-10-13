@@ -1,19 +1,24 @@
 <header>
   <div class="logo">
     <a routerLink="/">
-      <img src="assets\team_logo.jpg" alt="Logo" />
+      <img src="assets/team_logo.jpg" alt="Logo" />
     </a>
   </div>
-  <nav class="navbar">
+  
+  <div class="hamburger" (click)="toggleNavbar()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <nav class="navbar" [ngClass]="{'active': isNavbarActive}">
     <ul>
       <!-- <li>
         <a routerLink="/about-us" routerLinkActive="active">About Us</a>
         <span class="dropdown-symbol">&#9662;</span>
         <ul class="dropdown">
           <li>
-            <a routerLink="/about-us/who-we-are" routerLinkActive="active"
-              >Who we are</a
-            >
+            <a routerLink="/about-us/who-we-are" routerLinkActive="active">Who we are</a>
           </li>
           <li>
             <a routerLink="/about-us/faqs" routerLinkActive="active">FAQ</a>
@@ -25,19 +30,13 @@
         <span class="dropdown-symbol">&#9662;</span>
         <ul class="dropdown">
           <li>
-            <a routerLink="/league/scoreboard" routerLinkActive="active"
-              >Scoreboard</a
-            >
+            <a routerLink="/league/scoreboard" routerLinkActive="active">Scoreboard</a>
           </li>
           <li>
-            <a routerLink="/league/recent-match" routerLinkActive="active"
-              >Recent Match</a
-            >
+            <a routerLink="/league/recent-match" routerLinkActive="active">Recent Match</a>
           </li>
           <li>
-            <a routerLink="/league/schedule" routerLinkActive="active"
-              >Schedule</a
-            >
+            <a routerLink="/league/schedule" routerLinkActive="active">Schedule</a>
           </li>
         </ul>
       </li>
@@ -52,6 +51,7 @@
       <li><a routerLink="/faq" routerLinkActive="active">FAQs</a></li>
     </ul>
   </nav>
+  
   <div class="donate-button">
     <button>Donate</button>
   </div>
