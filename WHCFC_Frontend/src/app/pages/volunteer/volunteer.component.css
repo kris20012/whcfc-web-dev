@@ -3,22 +3,23 @@
 }
 
 .volunteer-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    overflow: auto;
-    min-height: 100vh;
-    align-items: center;
-    flex-direction: column;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px; 
+}
 
   .volunteer-volunteer {
     width: 100%;
-    height: 5840px;
+    height: min-height;
     display: flex;
     flex-wrap: wrap;
-    overflow: auto;
+    overflow: visible;
     position: relative;
     align-items: flex-start;
     flex-direction: column;
