@@ -1,45 +1,89 @@
 .faqfaq-header {
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 1;
-    background-color: rgba(0, 0, 0, 1);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.faq-text1 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 96px;
+  font-weight: 700;
+  text-align: left;
+  font-family: Outfit, sans-serif;
+  line-height: normal;
+  margin: 123px 0 0 188px;
+  width: 524px;
+}
+
+.faq-text2 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  max-width: 499px;
+  text-align: left;
+  margin: 645px 0 0 -520px;
+}
+
+.faq-image1 {
+  width: 627px;
+  height: 398px;
+  position: absolute;
+  top: 169px;
+  left: 851px;
+  border-radius: 30px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .faqfaq-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 20px;
+    height: auto;
   }
+
   .faq-text1 {
-    top: 123px;
-    left: 188px;
-    color: rgba(255, 255, 255, 1);
-    width: 524px;
-    height: auto;
-    position: absolute;
-    font-size: 96px;
-    font-style: Bold;
-    text-align: left;
-    font-family: Outfit;
-    font-weight: 700;
-    line-height: normal;
-    font-stretch: normal;
-    text-decoration: none;
+    font-size: 48px;
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
   }
+
   .faq-text2 {
-    top: 645px;
-    left: 188px;
-    color: rgba(255, 255, 255, 1);
-    width: 499px;
-    height: auto;
-    position: absolute;
-    text-align: left;
-    line-height: normal;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0;
+    max-width: 90%;
   }
+
   .faq-image1 {
-    top: 169px;
-    left: 851px;
-    width: 627px;
-    height: 398px;
-    position: absolute;
-    border-radius: 30px;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px 0;
+    position: relative;
+    top: 0;
+    left: 0;
   }
+}
+
+@media (max-width: 480px) {
+  .faq-text1 {
+    font-size: 36px;
+  }
+
+  .faq-text2 {
+    font-size: 16px;
+  }
+
+  .faq-image1 {
+    width: 100%;
+    max-width: 300px;
+  }
+}
