@@ -1,22 +1,26 @@
 .volunteer-testimonials {
-    top: 3066px;
-    left: 0px;
+    top: 2200px;
     width: 100vw;
-    height: 901px;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    position: absolute;
-    align-items: flex-start;
+    position: relative;
+    align-items: center;
     flex-shrink: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
     background-color: rgba(0, 0, 0, 1);
+    padding: 20px 0;
+    margin: 0 auto;
   }
 
   .volunteer-text1 {
-    top: 32px;
+    top: 30px;
     color: rgba(146, 226, 93, 1);
-    width: 216px;
+    width: 100%;
     height: auto;
-    position: absolute;
+    margin: 20px auto;
+    position: absolute; 
     text-align: center;
     line-height: normal;
     font-weight: 700;
