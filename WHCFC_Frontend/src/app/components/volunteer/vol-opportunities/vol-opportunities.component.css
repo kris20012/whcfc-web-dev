@@ -298,7 +298,7 @@
     font-weight: 700;
   }
 
-  @media (max-width: 480px) {
+  /* @media (max-width: 480px) {
 
     .volunteer-text2 {
       width: 100%;
@@ -414,5 +414,5 @@
     top: 20px;
   }
 
-  }
+  } */
   
