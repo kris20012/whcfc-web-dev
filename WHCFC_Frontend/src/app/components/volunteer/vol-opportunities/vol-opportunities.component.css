@@ -300,7 +300,7 @@
 
   @media (max-width: 480px) {
 
-    .volunteer-text2,
+    /* .volunteer-text2,
     .volunteer-text4,
     .volunteer-text5,
     .volunteer-text7,
@@ -345,7 +345,7 @@
       height: auto; 
       border-radius: 15px; 
       margin-top: 10px; 
-    }
+    } */
 
     .volunteer-connect2 {
       top: 300px;
