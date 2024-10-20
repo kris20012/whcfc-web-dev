@@ -1,13 +1,15 @@
 .volunteer-volunteer-application-form {
-    top: 4742px;
+    top: 2400px;
     left: 0px;
     width: 100vw;
     height: 1103px;
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: relative;
     align-items: flex-start;
     flex-shrink: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
     background-color: rgba(0, 0, 0, 1);
   }
   .volunteer-text1 {
