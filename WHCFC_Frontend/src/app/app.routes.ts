@@ -5,10 +5,14 @@ import { NgModule } from '@angular/core';
 import { FaqComponent } from './pages/faq/faq.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { PlayComponent } from './components/play/play.component';
+import { TournamentComponent } from './components/tournament/tournament.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'volunteer', component: VolunteerComponent },
+    { path: 'play', component: PlayComponent },
+    { path: 'tournament', component: TournamentComponent },
     { path: 'faq', component: FaqComponent },
     { path: 'contact-us', component: ContactComponent },
     { path: 'about-us', component: AboutUsComponent }
