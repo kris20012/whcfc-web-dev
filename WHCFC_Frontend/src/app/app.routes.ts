@@ -3,7 +3,8 @@ import { HomeComponent } from './components/home/home.component';
 import { VolunteerComponent } from './pages/volunteer/volunteer.component';
 import { NgModule } from '@angular/core';
 import { FaqComponent } from './pages/faq/faq.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { EventComponent } from './pages/event/event.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { PlayComponent } from './components/play/play.component';
 import { TournamentComponent } from './components/tournament/tournament.component';
@@ -19,8 +20,7 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
-  })
-
-  export class AppRoutingModule { }
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}
